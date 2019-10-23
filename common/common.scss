@@ -1,0 +1,132 @@
+/*
+    公共样式 
+    建议以 c- 开头作为样式作用域。
+    表示common区别于页面普通样式
+    当看到以 c- 开头的样式时便知为公共样式。
+    **此文件内的样式需做调整时望慎重**
+*/
+
+$baseColor: #1890ff;
+
+body {
+  background: #f5f5f5;
+  color: #515151;
+  background-attachment: fixed;
+}
+
+/* 去除顶部tab */
+uni-page-head{
+	display: none;
+}
+
+//弹性盒垂直方向布局
+.c-flexColumn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  main {
+    flex: 1;
+    overflow-x: hidden;
+  }
+}
+
+/* flex 水平垂直居中 */
+.c-flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 横向排序
+.c-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+// 竖向排序
+.c-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// 水平居中/垂直居中 需要根据排序方式来决定的
+.c-alic {
+  display: flex;
+  align-items: center;
+}
+
+// 水平居中/垂直居中 需要根据排序方式来决定的
+.c-jstc {
+  display: flex;
+  justify-content: center;
+}
+/* flex 侧轴方向居中 */
+.c-flexAlign {
+  display: flex;
+  align-items: center;
+}
+
+//超出文本隐藏
+.c-textFlow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+}
+
+.c-twoFlow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+// 隐藏元素为透明，但占位
+.c-hide {
+  opacity: 0;
+}
+
+//必填
+.c-required {
+  color: red;
+  font-size: 0.24rem /* 24/100 */;
+}
+
+//可点击文字下划线
+.c-underline {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.c-float-left {
+  float: left;
+}
+
+.c-float-right {
+  float: right;
+}
+
+
+.c-text-button::before {
+  border: none;
+}
+
+.c-text-button::after {
+  border: none;
+}
+
+.c-text-button.plain {
+  border: none;
+  border-color: transparent;
+}
+
+.c-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.text-center {
+  text-align: center;
+}

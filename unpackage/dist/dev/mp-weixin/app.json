@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/member/member"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#0090FF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/index-icon.png",
+        "selectedIconPath": "static/images/index-icon-active.png",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/images/menber-icon.png",
+        "selectedIconPath": "static/images/menber-icon.png",
+        "pagePath": "pages/member/member",
+        "text": "会员卡"
+      },
+      {
+        "iconPath": "static/images/mine-icon.png",
+        "selectedIconPath": "static/images/mine-icon-active.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}
